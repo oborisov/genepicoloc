@@ -57,38 +57,6 @@ query_GCKD_mGWAS <- function(sumstats_file,
   return(sumstats)
 }
 
-#' @title Query GCKD mGWAS plasma
-#' @description Query GCKD mGWAS plasma data to extract a region of interest
-#' @param sumstats_file path to sumstats.
-#' @param CHR_var CHR (as.character "1", "2", ..., "X").
-#' @param BP_START_var start of region, integer
-#' @param BP_STOP_var end of region, integer
-#' @return data frame with extracted sumstats
-#' @export
-# query_GCKD_mGWAS_plasma <- function(sumstats_file,
-#                                     CHR_var, BP_START_var, BP_STOP_var) {
-#   return(query_GCKD_mGWAS(sumstats_file = sumstats_file, sumstats_name = sumstats_name,
-#                           CHR_var = CHR_var, BP_START_var = BP_START_var, BP_STOP_var = BP_STOP_var,
-#                           p_threshold = p_threshold, maf = maf))
-# }
-
-#' @title Query GCKD mGWAS urine
-#' @description Query GCKD mGWAS urine data to extract a region of interest
-#' @param sumstats_file path to sumstats.
-#' @param CHR_var CHR (as.character "1", "2", ..., "X").
-#' @param BP_START_var start of region, integer
-#' @param BP_STOP_var end of region, integer
-#' @return data frame with extracted sumstats
-#' @export
-# query_GCKD_mGWAS_urine <- function(sumstats_file,
-#                                    CHR_var, BP_START_var, BP_STOP_var,
-#                                    p_threshold = 1e-6, maf = 0.01) {
-#   sumstats_name <- gsub("gckd_EUR_TopMed_2023-05-19_", "", gsub(".regenie.gz", "", basename(sumstats_file)))
-#   return(query_GCKD_mGWAS(sumstats_file = sumstats_file, sumstats_name = sumstats_name,
-#                           CHR_var = CHR_var, BP_START_var = BP_START_var, BP_STOP_var = BP_STOP_var,
-#                           p_threshold = p_threshold, maf = maf))
-# }
-
 #' @title Query UKB GWAS
 #' @description Query UK Biobank GWAS data to extract a region of interest
 #' @param sumstats_file path to UKB sumstats.
