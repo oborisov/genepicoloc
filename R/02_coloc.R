@@ -102,4 +102,3 @@ get_coloc_regions <- function(sumstats,
   return(coloc_regions)
 }
 
-w
